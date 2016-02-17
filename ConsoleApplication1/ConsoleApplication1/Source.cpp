@@ -3,25 +3,43 @@ using namespace std;
 int main()
 {
 	int i;
-	for (i = 1; i < 21; i++)
+	for (i = 1; i < 51; i++)
 
 	{
 
-		if (i % 3 == 0 && i % 5 != 0)
+		if (i % 3 == 0 && i % 5 == 0 && i % 7==0)
 		{
-			cout << "Buzz" << endl;
+			cout << "Fizz Buzz Woof" << endl;
 
 		}
 
-		else if (i % 5 == 0 && i % 3 != 0)
+		else if (i % 5 != 0 && i % 3 != 0 && i % 7 ==0)
+		{
+			cout << "woof"<< endl;
+		}
+
+		else if (i % 3 == 0 && i % 5 != 0 && i % 7 !=0 )
 		{
 			cout << "Fizz" << endl;
 		}
+		else if (i % 3 == 0 && i % 5 != 0 && i % 7 == 0)
+		{
+			cout << "Fizz woof" << endl;
+		}
+		else if (i % 5 == 0 && i % 3 != 0 && i % 7 != 0)
+		{
+			cout << "Buzz"<< endl;
+		}
 
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (i % 3 == 0 && i % 5 == 0 && i % 7 != 0)
 		{
 			cout << "Fizz Buzz" << endl;
 		}
+		else if (i % 3 != 0 && i % 5 == 0 && i % 7 == 0)
+		{
+			cout << "buzz wolf" << endl;
+		}
+
 
 		else
 		{
